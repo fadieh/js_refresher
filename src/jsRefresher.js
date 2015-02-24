@@ -24,13 +24,23 @@ return newArray
 // Question 3
 
 function removeNullsFromArray(array) {
-
+	var newArray = []
+	for (i = 0 ; i < array.length; i++){
+		if (array[i] !== null)
+			{ newArray.push(array[i]) }
+	}
+	return newArray
 };
 
 // Question 4
 
 function removeNullsAndFalseFromArray(array) {
-
+	var newArray = []
+	for (i = 0 ; i < array.length; i++){
+		if (array[i])
+			{ newArray.push(array[i]) }
+	}
+	return newArray
 };
 
 // Question 5
