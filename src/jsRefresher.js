@@ -1,13 +1,24 @@
 // Question 1
 
 function selectElementsStartingWithE(array) {
-  
+  var newArray = [];
+  for (i = 0 ; i < array.length; i++){
+  	if (array[i].charAt(0) === 'e')
+  	{ newArray.push(array[i]) }
+  }
+  return newArray
 };
 
 // Question 2
 
 function selectElementsStartingWithVowel(array) {
-
+var newArray = [];
+for (i = 0 ; i < array.length; i++){
+	firstLetter = array[i].charAt(0);
+	if ('aeiou'.indexOf(firstLetter) > -1)
+		{ newArray.push(array[i]) }
+}
+return newArray
 };
 
 // Question 3
