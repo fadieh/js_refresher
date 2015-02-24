@@ -122,14 +122,23 @@ function shortestWordInArray(array) {
 // Question 14
 
 function longestWordInArray(array) {
-
+	newArray = []
+	wordNum = 0
+	longestWord = ""
+	for (i = 0 ; i < array.length ; i++) {
+		if (array[i].length > wordNum) {
+			wordNum = array[i].length
+			longestWord = array[i]
+		}
+	}
+	return longestWord
 };
 
 // Question 15
 
 function arrayTotal(array) {
 	total = 0
-	for (i = 0 ; i < array.length; i++) {
+	for (i = 0 ; i < array.length ; i++) {
 		{ total += array[i] }
 	}
 	return total
@@ -138,7 +147,13 @@ function arrayTotal(array) {
 // Question 16
 
 function doubleArray(array) {
-
+	newArray = []
+	for (i = 0 ; i < array.length; i++) {
+		doubleIndex = i + array.length
+		{ newArray[i] = array[i] }
+		{ newArray[doubleIndex] = array[i] }
+	}
+	return newArray
 };
 
 // Question 17
