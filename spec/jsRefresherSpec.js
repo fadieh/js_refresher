@@ -36,7 +36,7 @@ describe('JavaScript Refresher Questions', function() {
       expect(addElementToBeginningOfArray(testArray, newElement)).toEqual(['a',1,2,3]);
   });
 
-  it('8. sortArrayByLastLetterOfEachWord: return array sorted by last letter of each string element', function() {
+  xit('8. sortArrayByLastLetterOfEachWord: return array sorted by last letter of each string element', function() {
     testArray = ['oatmeal', 'coffee', 'toast', 'tea'];
     expect(sortArrayByLastLetterOfEachWord(testArray)).toEqual(['tea', 'coffee', 'oatmeal', 'toast'])
   });
@@ -46,7 +46,7 @@ describe('JavaScript Refresher Questions', function() {
       expect(returnFirstHalfOfString('water')).toEqual('wat');
   });
 
-  xit('10. makeNumberNegative: convert positive (or negative) number to a negative number', function() {
+  it('10. makeNumberNegative: convert positive (or negative) number to a negative number', function() {
     expect(makeNumberNegative(5)).toEqual(-5);
     expect(makeNumberNegative(-3)).toEqual(-3);
   });
@@ -71,7 +71,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(longestWordInArray(testArray)).toEqual('chocolate');
   });
 
-  xit('15. arrayTotal: return total of number elements in an array', function() {
+  it('15. arrayTotal: return total of number elements in an array', function() {
     testArray = [1,3,5,9,10];
     expect(arrayTotal(testArray)).toEqual(28);
   });

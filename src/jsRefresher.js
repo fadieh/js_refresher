@@ -81,7 +81,7 @@ function addElementToBeginningOfArray(array, element) {
 function sortArrayByLastLetterOfEachWord(array) {
 	var newArray = []
 	for (i = 0 ; i < array.length; i ++) {
-		
+
 	}
 	return newArray
 };
@@ -95,7 +95,10 @@ function returnFirstHalfOfString(string) {
 // Question 10
 
 function makeNumberNegative(number) {
-
+	if (number > 0) {
+		number = number - number * 2
+	}
+	return number
 };
 
 // Question 11
@@ -125,7 +128,11 @@ function longestWordInArray(array) {
 // Question 15
 
 function arrayTotal(array) {
-
+	total = 0
+	for (i = 0 ; i < array.length; i++) {
+		{ total += array[i] }
+	}
+	return total
 };
 
 // Question 16
