@@ -79,7 +79,11 @@ function addElementToBeginningOfArray(array, element) {
 // Question 8
 
 function sortArrayByLastLetterOfEachWord(array) {
-
+	var newArray = []
+	for (i = 0 ; i < array.length; i ++) {
+		
+	}
+	return newArray
 };
 
 // Question 9
