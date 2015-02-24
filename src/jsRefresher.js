@@ -144,13 +144,25 @@ function doubleArray(array) {
 // Question 17
 
 function averageOfArray(array) {
-
+	total = 0
+	average = 0
+	for (i = 0 ; i < array.length ; i++) {
+		{ total += array[i] }
+		{ average = array.length }
+	}
+	return Math.round(total / average * 10) / 10;
 };
 
 // Question 18
 
 function removeElementsGreaterThanFive(array) {
-
+	newArray = []
+	for (i = 0 ; i < array.length ; i++) {
+		if (array[i] < 6) {
+			{ newArray.push(array[i]) }
+		}
+	}
+	return newArray
 };
 
 function isLessThanFive(element) {
