@@ -46,19 +46,34 @@ function removeNullsAndFalseFromArray(array) {
 // Question 5
 
 function reverseEveryElementInArray(array) {
-
+	var newArray = []
+	for (i = 0 ; i < array.length; i++) {
+	}
+	return newArray
 };
 
 // Question 6
 
 function dropFirstThreeElements(array) {
-
+	var newArray = []
+	for (i = 0 ; i < array.length; i++) {
+		if (i > 2) {
+			{ newArray.push(array[i]) }
+		}
+	}
+	return newArray
+	// return array
 };
 
 // Question 7
 
 function addElementToBeginningOfArray(array, element) {
-
+	var newArray = []
+	newArray[0] = element
+	for (i = 0 ; i < array.length; i++) {
+		{ newArray.push(array[i])}
+	}
+	return newArray
 };
 
 // Question 8
