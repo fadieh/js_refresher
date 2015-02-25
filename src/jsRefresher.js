@@ -250,7 +250,8 @@ function roundUpNumber(number) {
 // Question 26
 
 function roundDownNumber(number) { 
-
+	num = Math.floor(number)
+	return num
 }
 
 // Question 27
@@ -274,7 +275,7 @@ function titleizeString(string) {
 // Question 30
 
 function checkStringForSpecialCharacters(string) {
-	
+
 }
 
 // Question 31
@@ -293,9 +294,7 @@ function squareRootOf(number) {
 // Question 33
 
 function callMethodFromString(string) {
-	if (string.indexOf("say")) {
 
-	}
 }
 
 // Question 34
