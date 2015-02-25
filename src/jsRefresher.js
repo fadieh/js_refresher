@@ -88,7 +88,9 @@ function sortArrayByLastLetterOfEachWord(array) {
 // Question 9
 
 function returnFirstHalfOfString(string) {
-
+	half = Math.ceil(string.length / 2)
+	halfString = string.substr(0, half)
+	return halfString
 }
 // Question 10
 
