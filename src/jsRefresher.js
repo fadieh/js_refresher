@@ -71,9 +71,9 @@ function dropFirstThreeElements(array) {
 // Question 7
 
 function addElementToBeginningOfArray(array, element) {
-	var newArray = []
+	newArray = []
 	newArray[0] = element
-	for (i = 0 ; i < array.length; i++) {
+	for (i = 0 ; i < array.length ; i++) {
 		{ newArray.push(array[i])}
 	}
 	return newArray
@@ -82,19 +82,14 @@ function addElementToBeginningOfArray(array, element) {
 // Question 8
 
 function sortArrayByLastLetterOfEachWord(array) {
-	newArray = []
-	for (i = 0 ; i < array.length; i ++) {
 
-	}
-	return newArray
 };
 
 // Question 9
 
 function returnFirstHalfOfString(string) {
 
-};
-
+}
 // Question 10
 
 function makeNumberNegative(number) {
@@ -202,18 +197,28 @@ function removeElementsGreaterThanFive(array) {
 	return newArray
 };
 
-function isLessThanFive(element) {
-
-};
-
 // Question 19
 
 function convertArrayToObject(array) {
-
+	object = {}
+	for (i = 0 ; i < array.length ; i++) {
+		object[i] = array[i]
+	}
+	return object
 };
 
 // Question 20
 
 function getLettersInArrayOfWords(array) {
 
+};
+
+// Question 21
+
+function swapKeysAndValuesInObject(object) {
+	newObject = {}
+	for (key in object) {
+		newObject[object[key]] = parseInt(key)
+	}
+	return newObject
 };
