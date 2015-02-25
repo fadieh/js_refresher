@@ -20,7 +20,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(removeNullsAndFalseFromArray(testArray)).toEqual([true, 1, 2, 'x']);
   });
 
-  xit('5. reverseEveryElementInArray: return array with each individual string element reversed', function() {
+  it('5. reverseEveryElementInArray: return array with each individual string element reversed', function() {
       testArray = ['coffee', 'tea', 'cake', 'brownie'];
       expect(reverseEveryElementInArray(testArray)).toEqual(['eeffoc', 'aet', 'ekac', 'einworb']);
   });
@@ -56,7 +56,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(separateArrayIntoEvenAndOddNumbers(testArray)).toEqual([[2,4,6], [1,3,5,7]]);
   });
 
-  xit('12. numberOfElementsThatArePalindromes: return number of elements in an array that are palindromes', function() {
+  it('12. numberOfElementsThatArePalindromes: return number of elements in an array that are palindromes', function() {
     testArray = ['pop', 'coffee', 'level', 'hello', 'wow'];
       expect(numberOfElementsThatArePalindromes(testArray)).toEqual(3);
   });

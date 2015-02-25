@@ -48,6 +48,9 @@ function removeNullsAndFalseFromArray(array) {
 function reverseEveryElementInArray(array) {
 	var newArray = []
 	for (i = 0 ; i < array.length; i++) {
+		reverse = array[i].split("").reverse().join("");
+		array[i] = reverse
+		{ newArray.push(array[i])}
 	}
 	return newArray
 };
@@ -79,7 +82,7 @@ function addElementToBeginningOfArray(array, element) {
 // Question 8
 
 function sortArrayByLastLetterOfEachWord(array) {
-	var newArray = []
+	newArray = []
 	for (i = 0 ; i < array.length; i ++) {
 
 	}
@@ -110,19 +113,38 @@ function separateArrayIntoEvenAndOddNumbers(array) {
 // Question 12
 
 function numberOfElementsThatArePalindromes(array) {
-
+	newArray = []
+	for (i = 0 ; i < array.length ; i++) {
+		reverse = array[i].split("").reverse().join("");
+		if (array[i] == reverse) {
+			newArray.push(array[i])
+		}
+	}
+	return newArray.length
 };
 
 // Question 13
 
 function shortestWordInArray(array) {
-
+	// newArray = []
+	// shortestWord = ""
+	// wordNum = 0
+	// for (i = 0 ; i < array.length ; i++) {
+	// 	if (array[i].length > wordNum) {
+	// 		wordNum = array[i].length
+	// 	}
+	// }
+	// for (i = 0 ; i < array.length ; i++) {
+	// 	if (array[i].length < wordNum) {
+	// 		shortestWord = array[i]
+	// 	}
+	// }
+	// return shortestWord
 };
 
 // Question 14
 
 function longestWordInArray(array) {
-	newArray = []
 	wordNum = 0
 	longestWord = ""
 	for (i = 0 ; i < array.length ; i++) {
