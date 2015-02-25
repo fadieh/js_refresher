@@ -121,20 +121,15 @@ function numberOfElementsThatArePalindromes(array) {
 // Question 13
 
 function shortestWordInArray(array) {
-	// newArray = []
-	// shortestWord = ""
-	// wordNum = 0
-	// for (i = 0 ; i < array.length ; i++) {
-	// 	if (array[i].length > wordNum) {
-	// 		wordNum = array[i].length
-	// 	}
-	// }
-	// for (i = 0 ; i < array.length ; i++) {
-	// 	if (array[i].length < wordNum) {
-	// 		shortestWord = array[i]
-	// 	}
-	// }
-	// return shortestWord
+	wordNum = 189819 // longest word in english, chemical name of titin
+	shortestWord = ""
+	for (i = 0 ; i < array.length ; i++) {
+		if (array[i].length < wordNum) {
+			wordNum = array[i].length
+			shortestWord = array[i]
+		}
+	}
+	return shortestWord
 };
 
 // Question 14
