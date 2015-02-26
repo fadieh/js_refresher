@@ -104,7 +104,16 @@ function makeNumberNegative(number) {
 // Question 11
 
 function separateArrayIntoEvenAndOddNumbers(array) {
-
+	odds = []
+	evens = []
+	for (i = 0 ; i < array.length ; i++) {
+		if (array[i] % 2 === 0) {
+			evens.push(array[i])
+		} else if (array[i] % 2 === 1) {
+			odds.push(array[i])
+		}
+	}
+	return [evens, odds]
 };
 
 // Question 12
@@ -261,7 +270,8 @@ function formatDateNicely(date) {
 // Question 28
 
 function getDomainNameFromEmailAddress(email) {
-
+	domain = email.replace(/.*@/, "");
+	return domain
 }
 
 // Question 29
