@@ -216,7 +216,14 @@ function convertArrayToObject(array) {
 // Question 20
 
 function getLettersInArrayOfWords(array) {
-
+	newArray = []
+	mergedArray = []
+	for (i = 0 ; i < array.length ; i++) {
+		newArray[i] = array[i].split('')
+	}
+	mergedArray = mergedArray.concat.apply(mergedArray, newArray)
+	mergedArray.sort();
+	return mergedArray
 };
 
 // Question 21

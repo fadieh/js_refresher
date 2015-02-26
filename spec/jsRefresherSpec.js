@@ -98,7 +98,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(convertArrayToObject(testArray)).toEqual({0: 'a', 1: 'b', 2:'c'});
   });
 
-  xit('20. getLettersInArrayOfWords: return array with letters of all words sorted in alphabetical order', function() {
+  it('20. getLettersInArrayOfWords: return array with letters of all words sorted in alphabetical order', function() {
     testArray = ['hi', 'bye', 'no', 'yes'];
     expect(getLettersInArrayOfWords(testArray)).toEqual(['b','e','e','h','i','n','o','s','y','y'])
   });
@@ -108,7 +108,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(swapKeysAndValuesInObject(testObject)).toEqual({'a':1, 'b':2, 'c':3});
   });
 
-  xit('22. addKeysAndValues: return sum of numerical keys and values in object', function() {
+  it('22. addKeysAndValues: return sum of numerical keys and values in object', function() {
       testObject = {1:2, 3:4, 5:6}
       expect(addKeysAndValues(testObject)).toEqual(21);
   });
